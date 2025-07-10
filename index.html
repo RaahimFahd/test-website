@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Uploader & Player</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.6/dist/ffmpeg.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Upload and Play/Preview Files</h2>
+        <label class="upload-label" for="file-input">Choose File</label>
+        <input type="file" id="file-input" 
+            accept=".mp3,.mp4,.pdf,.doc,.docx,.xls,.xlsx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,audio/mp3,video/mp4">
+        <div id="filename-display"></div>
+        <div id="player-container"></div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
